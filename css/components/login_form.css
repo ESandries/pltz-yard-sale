@@ -1,0 +1,59 @@
+.loginFormContainer {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  margin-inline: 24px;
+}
+
+.loginFormContainer--logo {
+  width: 180px;
+  margin: 0 auto;
+  padding-block-end: 80px;
+}
+
+.loginFormContainer--title {
+  font-size: var(--lg);
+  margin-block-start: 0;
+  margin-block-end: 8px;
+  text-align: center;
+}
+
+.loginFormContainer--subtitle {
+  font-size: var(--md);
+  margin-block-start: 0;
+  margin-block-end: 32px;
+  text-align: center;
+}
+
+.loginFormContainer--form {
+  display: flex;
+  flex-direction: column;
+}
+
+.loginFormContainer--form__label {
+  font-size: var(--md);
+  font-weight: bold;
+  margin-block-end: 6px;
+}
+
+.loginFormContainer--form__input {
+  margin-block-end: 12px;
+  border: transparent;
+  padding-block: 8px;
+  border-radius: 8px;
+  background-color: var(--text-imput-field);
+}
+
+.loginFormContainer--form__input {
+  margin-block-end: 12px;
+}
+
+.loginFormContainer--form__submit {
+  padding-block: 14px;
+  border-radius: 8px;
+  font-size: var(--md);
+  font-weight: bold;
+  color: var(--white);
+  background-color: var(--hospital-green);
+  border: transparent;
+  font-family: "Quicksand", sans-serif;
+}
