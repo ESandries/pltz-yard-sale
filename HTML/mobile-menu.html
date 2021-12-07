@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!--The text below link de fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&family=Roboto:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <!--The text below is the style for the comoponent-->
+    <style>
+      @import "../css/variables.css";
+
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        font-family: "Quicksand", sans-serif;
+      }
+
+      .mobile-menu {
+        padding-inline: 24px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      .mobile-menu ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      .mobile-menu ul a {
+        text-decoration: none;
+      }
+
+      .menu--categories__title,
+      .menu--account__title {
+        margin-block-start: 16px;
+        display: inline-block;
+        font-size: var(--lg);
+        font-weight: bold;
+        margin-block-end: 8px;
+        text-align: center;
+        color: var(--black);
+      }
+
+      .mobile-menu-userlogin {
+        border-top: 1px solid var(--very-light-pink);
+        height: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      .menu-singOut_email {
+        font-size: var(--sm);
+        display: inline-block;
+        padding-block-end: 4px;
+        color: var(--black);
+      }
+      .menu-singOut_singOut {
+        font-size: var(--md);
+        font-weight: bold;
+        color: var(--hospital-green);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="mobile-menu">
+      <ul class="mobile-menu_categories">
+        <li><a href="/" class="menu--categories__title">CATEGORIES</a></li>
+        <li><a href="/" class="menu--categories__title">All</a></li>
+        <li><a href="/" class="menu--categories__title">Clothes</a></li>
+        <li><a href="/" class="menu--categories__title">Electronics</a></li>
+        <li><a href="/" class="menu--categories__title">Furnitures</a></li>
+        <li><a href="/" class="menu--categories__title">Toys</a></li>
+        <li><a href="/" class="menu--categories__title">Other</a></li>
+      </ul>
+      <div class="mobile-menu-userlogin">
+        <ul class="mobile-menu_account">
+          <li><a href="" class="menu--account__title">My Orders</a></li>
+          <li><a href="" class="menu--account__title">My account</a></li>
+        </ul>
+        <ul class="mobile-menu_singOut">
+          <li>
+            <a href="" class="menu-singOut_email">esandries@example.com</a>
+          </li>
+          <li><a href="" class="menu-singOut_singOut">Sign out</a></li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

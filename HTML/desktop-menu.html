@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!--The text below link de fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&family=Roboto:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <!--The text below is the style for the comoponent-->
+    <style>
+      @import "../css/variables.css";
+
+      body {
+        margin: 0;
+        font-family: "Quicksand", sans-serif;
+      }
+
+      .desktop-menu {
+        width: 120px;
+        height: auto;
+        border: 1px solid var(--very-light-pink);
+        padding: 20px 20px 0 20px;
+      }
+      .desktop-menu ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .desktop-menu ul li {
+        text-align: end;
+      }
+
+      .desktop-menu ul li:last-child {
+        padding-block-start: 20px;
+        border-top: 1px solid var(--very-light-pink);
+      }
+
+      .desktop-menu ul li:last-child a {
+        color: var(--hospital-green);
+        text-decoration: none;
+        font-size: var(--sm);
+        font-weight: bold;
+      }
+
+      .desktop-menu ul li a {
+        color: var(--black);
+        text-decoration: none;
+        display: inline-block;
+        margin-block-end: 8px;
+      }
+
+      .title {
+        text-decoration: none;
+        font-size: var(--lg);
+        font-weight: bold;
+        margin-block-start: 0;
+        margin-block-end: 8px;
+        text-align: center;
+        color: var(--black);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="desktop-menu">
+      <ul>
+        <li><a href="/" class="title"> My orders </a></li>
+
+        <li><a href="/" class="title"> My account </a></li>
+
+        <li><a href="/"> Sing out </a></li>
+      </ul>
+    </div>
+  </body>
+</html>

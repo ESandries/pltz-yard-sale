@@ -1,0 +1,60 @@
+/*
+Here you can see the HTML structure with the classes
+
+<div class="product-card">
+    <img class="product-img" />
+    <div class="product-info">
+        <div class="product-info__description">
+            <p class="product-info-price"></p>
+            <p class="product-info-name"></p>
+        </div>
+        <figure>
+            <img/>
+        </figure>
+    </div>
+</div>
+*/
+
+.product-card {
+  width: 240px;
+}
+.product-img {
+  object-fit: cover; /*This property keep the relation of the img*/
+  width: 240px;
+  height: 240px;
+  border-radius: 20px;
+}
+
+.product-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-block-start: 16px;
+}
+
+.product-info figure {
+  margin: 0;
+}
+
+.product-info-price {
+  font-weight: bold;
+  font-size: var(--md);
+  margin-block-end: 4px;
+  margin-block-start: 0px;
+}
+
+.product-info-name {
+  font-size: var(--sm);
+  margin-block-end: 0px;
+  margin-block-start: 0px;
+}
+
+@media (max-width: 640px) {
+  .product-card {
+    width: 140px;
+  }
+  .product-img {
+    width: 140px;
+    height: 140px;
+  }
+}
