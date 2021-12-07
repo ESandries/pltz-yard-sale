@@ -2,12 +2,11 @@
   display: grid;
   grid-template-rows: auto 1fr auto;
   margin-inline: 24px;
+  justify-items: center;
 }
 
 .loginFormContainer--logo {
-  width: 180px;
-  margin: 0 auto;
-  padding-block-end: 80px;
+  display: none;
 }
 
 .loginFormContainer--title {
@@ -24,6 +23,31 @@
   text-align: center;
 }
 
+.logindFormContainer--email {
+  width: 180px;
+  height: 180px;
+  background-color: var(--text-imput-field);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-block-end: 24px;
+}
+
+.logindFormContainer--email img {
+  width: 80px;
+}
+
+.loginFormContainer--resend span {
+  color: var(--very-light-pink);
+}
+
+.loginFormContainer--resend a {
+  color: var(--hospital-green);
+  font-weight: bold;
+  text-decoration: none;
+}
+
 .loginFormContainer--form {
   display: flex;
   flex-direction: column;
@@ -37,8 +61,10 @@
 
 .loginFormContainer--form__input {
   margin-block-end: 12px;
-  border: transparent;
-  padding-block: 8px;
+  font-size: var(--md);
+  border: none;
+  height: 30px;
+  padding-inline: 8px;
   border-radius: 8px;
   background-color: var(--text-imput-field);
 }
@@ -48,12 +74,34 @@
 }
 
 .loginFormContainer--form__submit {
+  width: 100%;
   padding-block: 14px;
   border-radius: 8px;
   font-size: var(--md);
   font-weight: bold;
   color: var(--white);
   background-color: var(--hospital-green);
-  border: transparent;
+  border: none;
   font-family: "Quicksand", sans-serif;
+}
+
+.primary-button {
+  width: 100%;
+  padding-block: 14px;
+  border-radius: 8px;
+  font-size: var(--md);
+  font-weight: bold;
+  color: var(--white);
+  background-color: var(--hospital-green);
+  border: none;
+  font-family: "Quicksand", sans-serif;
+}
+
+@media (max-width: 640px) {
+  .loginFormContainer--logo {
+    display: block;
+    width: 70%;
+    margin: 0 auto;
+    padding-block-end: 60px;
+  }
 }
