@@ -27,39 +27,45 @@
 
         <form action="" class="loginFormContainer--form create-account-page">
           <div class="label-input">
-            <label for="name" class="loginFormContainer--form__label">
+            <label
+              for="loginFormContainer--form__user-name"
+              class="loginFormContainer--form__label"
+            >
               name
             </label>
-            <input
-              id="name"
-              type="text"
-              class="loginFormContainer--form__input input input-name"
-              placeholder="Emanuel Sandries"
-            />
+            <p
+              id="loginFormContainer--form__user-name"
+              class="loginFormContainer--form__userinfo"
+            >
+              Emanuel Sandries
+            </p>
             <label for="email" class="loginFormContainer--form__label">
               Email address
             </label>
-            <input
-              class="loginFormContainer--form__input input input-email"
-              id="email"
-              type="email"
-              placeholder="esandries@example.com"
-            />
-            <label for="password" class="loginFormContainer--form__label">
+            <p
+              id="loginFormContainer--form__user-email"
+              class="loginFormContainer--form__userinfo"
+            >
+              me@esandries.com
+            </p>
+            <label
+              for="loginFormContainer--form__user-password"
+              class="loginFormContainer--form__label"
+            >
               Password
             </label>
-            <input
-              class="loginFormContainer--form__input input input-password"
-              id="password"
-              type="password"
-              placeholder="********"
-            />
+            <p
+              class="loginFormContainer--form__userinfo"
+              id="loginFormContainer--form__user-password"
+            >
+              ********
+            </p>
           </div>
 
           <input
             type="submit"
-            class="loginFormContainer--form__submit"
-            value="Create account"
+            class="secondary-button loginFormContainer--form__edit"
+            value="Edit"
           />
         </form>
       </div>

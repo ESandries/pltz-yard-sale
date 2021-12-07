@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yard Sale</title>
+    <!--The text below link de fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&family=Roboto:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <!--The text below link the css styles-->
+    <link rel="stylesheet" href="../main.css" />
+    <!--The text below link the layout for forms to login-->
+    <link rel="stylesheet" href="../css/login_layout.css" />
+  </head>
+
+  <body>
+    <div class="layoutLogin">
+      <div class="loginFormContainer loginpage">
+        <div class="loginFormContainer--logo loginpage">
+          <img src="../logos/logo_yard_sale.svg" alt="Logo Yard Sale" />
+        </div>
+        <form action="" class="loginFormContainer--form loginpage">
+          <label for="email" class="loginFormContainer--form__label">
+            Email address
+          </label>
+          <input
+            id="email"
+            type="email"
+            class="loginFormContainer--form__input input"
+            placeholder="esandries@example.com"
+          />
+          <label for="new_password" class="loginFormContainer--form__label">
+            Password
+          </label>
+          <input
+            class="loginFormContainer--form__input input"
+            id="password"
+            type="password"
+            placeholder="********"
+          />
+          <input
+            type="submit"
+            class="loginFormContainer--form__submit primary-button"
+            value="Log in"
+          />
+          <a
+            href="./password_recovery1.html"
+            class="loginFormContainer--form__newpassword"
+          >
+            Forgot my password
+          </a>
+        </form>
+        <button class="secondary-button loginFormContainer--signup-button">
+          Sing Up
+        </button>
+      </div>
+    </div>
+  </body>
+</html>

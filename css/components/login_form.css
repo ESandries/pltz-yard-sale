@@ -1,7 +1,10 @@
 .loginFormContainer {
   display: grid;
+  box-sizing: border-box;
+  min-width: 280px;
   grid-template-rows: auto 1fr auto;
   margin-inline: 24px;
+  margin-block: 24px;
   justify-items: center;
 }
 
@@ -14,6 +17,10 @@
   margin-block-start: 0;
   margin-block-end: 8px;
   text-align: center;
+}
+
+.loginFormContainer--title.create-account-page {
+  justify-self: left;
 }
 
 .loginFormContainer--subtitle {
@@ -51,6 +58,13 @@
 .loginFormContainer--form {
   display: flex;
   flex-direction: column;
+  width: 100%;
+}
+
+.loginFormContainer--form div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 .loginFormContainer--form__label {
@@ -73,7 +87,21 @@
   margin-block-end: 12px;
 }
 
+.input-email,
+.input-name,
+.input-password {
+  margin-block-end: 22px;
+}
+
+.loginFormContainer--form__userinfo {
+  color: var(--very-light-pink);
+  font-size: var(--md);
+  margin-block-start: 8px;
+  margin-block-end: 12px;
+}
+
 .loginFormContainer--form__submit {
+  cursor: pointer;
   width: 100%;
   padding-block: 14px;
   border-radius: 8px;
@@ -85,7 +113,17 @@
   font-family: "Quicksand", sans-serif;
 }
 
+.loginFormContainer--form__newpassword {
+  color: var(--hospital-green);
+  font-size: var(--sm);
+  text-align: center;
+  text-decoration: none;
+  margin-block-end: 52px;
+  margin-block-start: 12px;
+}
+
 .primary-button {
+  cursor: pointer;
   width: 100%;
   padding-block: 14px;
   border-radius: 8px;
@@ -94,14 +132,60 @@
   color: var(--white);
   background-color: var(--hospital-green);
   border: none;
+  font-family: "Quicksand", sans-serif;
+}
+
+.secondary-button {
+  cursor: pointer;
+  width: 100%;
+  padding-block: 14px;
+  border-radius: 8px;
+  font-size: var(--md);
+  font-weight: bold;
+  color: var(--hospital-green);
+  background-color: var(--white);
+  border: 1px solid var(--hospital-green);
   font-family: "Quicksand", sans-serif;
 }
 
 @media (max-width: 640px) {
   .loginFormContainer--logo {
-    display: block;
+    display: grid;
+    place-items: center;
     width: 70%;
-    margin: 0 auto;
-    padding-block-end: 60px;
+    margin-block-end: 32px;
+  }
+
+  .loginFormContainer--logo.loginpage {
+    margin-block-start: 32px;
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 80px;
+  }
+  .loginFormContainer--logo.loginpage img {
+    width: 70%;
+  }
+
+  .loginFormContainer.loginpage {
+    height: 90%;
+  }
+
+  .loginFormContainer--form.loginpage {
+    height: 90%;
+    justify-content: center;
+  }
+
+  .loginFormContainer.create-account-page {
+    height: 100%;
+    padding-block: 40px;
+  }
+  .loginFormContainer--form.create-account-page {
+    height: 100%;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .loginFormContainer--form.create-account-page label-input {
+    width: 100%;
   }
 }
